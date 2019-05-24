@@ -178,9 +178,9 @@ nav > ul > li > a:hover {
 }
 .our-services{
   background-color: #f7f7f7;
-  margin-top: -10px;
   position: relative;
   padding-bottom: 10px;
+  padding-top: 50px;
 }
 .icons-new {
     overflow: hidden;
@@ -372,4 +372,33 @@ footer{
 .info_contact p:nth-child(5),
 .info_contact p:nth-child(6){
   margin-bottom: 35px;
+}
+.p-blue{
+  color: #43aece;
+  font: normal 20px / 10px 'Cabin', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 600;
+}
+.p-blue--right{
+  text-align: right;
+}
+@media (max-width: 720px){
+  header{
+    display: none;
+  }
+   h1{
+     padding: 0px 5px;
+     font-size: 30px;
+   }
+   .our-services h2{
+     margin-bottom: 50px;
+   }
+   .p-blue{
+     font: normal 20px / 25px 'Cabin', Helvetica, Arial, Verdana, sans-serif;
+   }
+   .p-relative {
+      z-index: 9;
+    }
+    .circle--home{
+          margin: 0 auto 40px;
+    }
 }
