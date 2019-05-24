@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  overflow-x: hidden;
+}
 h1, h2{
   font-family: 'Cabin', sans-serif;
 }
@@ -353,11 +356,11 @@ footer{
 .footer-black{
   background-color: #000;
   padding-top: 55px;
+  margin-top: 35px;
 }
 .info_contact p:first-child{
     color: #00b6e9;
     font-weight: 600;
-
 }
 .info_contact p{
   color: #fff;
@@ -368,18 +371,56 @@ footer{
    max-width: 440px;
    color: #fff;
 }
+.info_contact p:nth-child(3) {
+    margin-bottom: 40px;
+}
 .info_contact p:nth-child(4),
 .info_contact p:nth-child(5),
-.info_contact p:nth-child(6){
+.info_contact p:nth-child(6),
+.info_contact p:nth-child(7),
+.info_contact p:nth-child(8){
   margin-bottom: 35px;
 }
 .p-blue{
   color: #43aece;
-  font: normal 20px / 10px 'Cabin', Helvetica, Arial, Verdana, sans-serif;
+  font: normal 20px / 20px 'Cabin', Helvetica, Arial, Verdana, sans-serif;
   font-weight: 600;
 }
 .p-blue--right{
   text-align: right;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.form-group label{
+  color: #fff;
+  width: 250px;
+      margin-bottom: 15px;
+}
+.form-general{
+    background: rgba(0, 0, 0, 0.38);
+    padding: 45px 45px 10px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
+.form-general h2{
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 35px;
+}
+.form-group button{
+  background: #ffa426;
+    font-size: 25px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 3px;
+    padding: 5px 38px !important;
+    margin: 40px auto 0;
+    display: block;
+    box-shadow: 0 0 30px rgba(251, 231, 183, 0.62);
+    width: 100%;
+    border: none;
 }
 @media (max-width: 720px){
   header{
@@ -400,5 +441,18 @@ footer{
     }
     .circle--home{
           margin: 0 auto 40px;
+    }
+    .form-general{
+      padding: 5px 10px 10px;
+    }
+    .form-group {
+        flex-wrap: wrap;
+    }
+    .form-group label{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .form-general h2{
+          margin-bottom: 15px;
     }
 }

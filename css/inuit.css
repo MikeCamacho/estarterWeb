@@ -14,7 +14,7 @@
   --grid-maxWidth: 1200px;
   --grid-gutter: 1.6rem;
   --grid-columns: 12;
-  --font-family: 'Roboto',-apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+  --font-family: 'Didact Gothic', sans-serif;}
 
 * {
   -webkit-box-sizing: border-box;
@@ -727,10 +727,11 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type=
 select,
 textarea,
 textarea[type="text"] {
+  color: #8b8d94;
   font-family: inherit;
-  padding: 1.2rem 1.6rem;
-  border-radius: .4rem;
-  border: 0.1rem solid var(--lightGrey-color);
+  padding: 5px 15px;
+  border-radius: 1px;
+  border: 1px solid rgba(51,51,51,0.12);
   font-size: 1em;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -760,7 +761,7 @@ textarea[type="text"] {
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  color: transparent;
+  color: #8b8d94;
   text-shadow: 0 0 0 var(--fontPrimary--color);
   background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANBAMAAABiGeI2AAAAAXNSR0IArs4c6QAAABVQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgEApAAAAAZ0Uk5TAAQgjq7gQDFL+gAAAC5JREFUCNdjYGBQYgACplAFIKmaFgRkhqWlKjAIu7i4GDJgAog4RA1EPVQvyBwAJfcHk8E7lP8AAAAASUVORK5CYII=") no-repeat 100%;
   background-size: 1ex;
