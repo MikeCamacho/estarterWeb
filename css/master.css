@@ -48,7 +48,7 @@ p{
     width: 100%;
     z-index: 0;
 }
-header{
+.header{
   position: fixed;
 top: 0;
 left: 50%;
@@ -77,6 +77,27 @@ align-content: stretch;
 -ms-justify-content: space-between;
 justify-content: space-between;
 -ms-flex-pack: justify;
+z-index: 99;
+}
+header{
+    -webkit-animation: fade-out-anim .8s ease 0s 1 normal both;
+    animation: fade-out-anim .8s ease 0s 1 normal both;
+    will-change: opacity;
+}
+.menu-fixed{
+  background: -webkit-linear-gradient(left, rgb(39, 124, 169) 0%, rgb(0, 183, 234) 100%);
+  min-height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 98;
+  box-shadow: 0px 4px 9px 3px #00000040;
+  -webkit-animation: opacity-lat .7s ease 0s 1 normal both;
+  animation: opacity-lat .7s ease 0s 1 normal both;
+  animation-delay: .1s;
+}
+.menu-fixed .header{
+  min-height: 70px;
 }
 nav{
   display: flex;
