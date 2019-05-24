@@ -1,0 +1,41 @@
+{
+  "name": "inuit-css",
+  "version": "2.0.5",
+  "description": "Framework CSS for Artico Digital",
+  "main": "dist/inuit.min.css",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "production": "cross-env NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArticoDigital/inuit-css.git"
+  },
+  "keywords": [
+    "CSS",
+    "Framework css flex"
+  ],
+  "author": "juan2ramos <juan2ramos@gmail.com> (https://juan2ramos.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArticoDigital/inuit-css/issues"
+  },
+  "homepage": "https://github.com/ArticoDigital/inuit-css#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "compression-webpack-plugin": "^1.0.1",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "cssnano": "^3.10.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^2.0.8",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {}
+}
